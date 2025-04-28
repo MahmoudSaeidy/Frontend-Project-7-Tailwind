@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" html class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./src/input.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Home Smart</title>
+</head>
+<body class="overflow-x-hidden">
+  
+  <nav class="mx-auto p-4 bg-amber-400 flex justify-between items-center relative">
+    <!-- container for logo and menu button -->
+    <div class="container mx-auto flex justify-between items-center lg:relative">
+      
+      <!-- logo -->
+      <a
+        href="#"
+        aria-label="Go to home page"
+        class="focus:border-none focus:outline-none focus-visible:ring-4 focus-visible:ring-neutral-900 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 px-4 lg:absolute z-20 hover:opacity-75 transition-opacity
+        lg:left-1/2
+        lg:-translate-x-1/2
+        lg:top-1"
+      >
+        <img width="200" class="w-48 md:w-64 lg:w-72" src="./assets/logo.svg" alt="Home Smart Logo" />
+      </a>
+
+      <!-- menubar toggle button (only shows on small screens) -->
+      <button aria-label = "open menu" aria-expanded="false" id = "menu" class="menu lg:hidden focus:border-none focus:outline-none focus-visible:ring-4 transition-colors  focus-visible:ring-neutral-900 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 px-4 z-50 text-neutral-900 hover:text-neutral-600 cursor-pointer">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+
+      <!-- navigation menu -->
+      <div
+        role="menubar"
+        class=" z-40 transition-all duration-300 transform menubar absolute opacity-0 flex scale-95 items-center top-16 left-0 right-0 lg:flex flex-col justify-center gap-4 shadow-xl text-center bg-amber-400 w-full 
+         lg:static lg:justify-between lg:w-full lg:flex-row lg:shadow-none py-6 lg:py-0 lg:opacity-100 lg:scale-100"
+      >
+        <a
+          role="menuitem"
+          class="p-4 focus:border-none focus:outline-none focus-visible:ring-4 
+          focus-visible:ring-neutral-900 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 px-4"
+          href="#"
+        >
+          Home
+        </a>
+        <a
+          role="menuitem"
+          class="lg:mr-auto p-4 focus:border-none focus:outline-none focus-visible:ring-4 
+          focus-visible:ring-neutral-900 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 px-4"
+          href="#"
+        >
+          Contact
+        </a>
+        <a
+          role="menuitem"
+          class="p-4 focus:border-none focus:outline-none focus-visible:ring-4 
+          focus-visible:ring-neutral-900 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 px-4"
+          href="#"
+        >
+          Login
+        </a>
+        <a
+          role="menuitem"
+          class="py-2 focus:border-none focus:outline-none focus-visible:ring-4 
+          focus-visible:ring-neutral-900  flex justify-center items-center bg-teal-900 text-white  ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 px-8"
+          href="#"
+        >
+          Sign Up
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class = "relative p-4 md:pt-24 lg:pt-48">
+      <div class = "absolute
+      inset-0
+      bottom-8
+      md:bottom-24
+      lg:bottom-32
+      -z-10
+      bg-gradient-to-b
+      from-amber-400
+      to-amber-600"></div>
+    <div class="container mx-auto grid grid-col-1 place-items-end px-2">
+      <img src="assets/couch.png" class = "row-start-1 row-end-2 col-start-1 col-end-2 mx-auto" alt="Couch">
+      <img src="assets/app.svg" class = "row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-64 lg:w-72" alt="App">
+    </div>
+  </header>
+  <main class = "">
+    <a href="" class = "bg-amber-400 px-16 py-2 rounded-xl mx-auto text-center block w-fit my-8 focus:border-none focus:outline-none focus-visible:ring-4 focus-visible:ring-neutral-900 ring-neutral-900 ring-offset-4 ring-offset-amber-400 dark:ring-offset-neutral-800 dark:ring-amber-400">
+      <i class="fa-solid fa-download"></i>
+      <span class="">Download the App</span>
+    </a>
+    <section aria-labelledby="qualities" class ="relative">
+      
+      <h2 id = "qualities" class = "sr-only">Our Qualities</h2>
+      <div class="container text-center grid grid-cols-1 md:grid-cols-3 mx-auto gap-2 pb-12 pt-0 md-pt-12 md:px-10">
+        <img src="assets/dots.svg" aria-hidden = "true" class = "hidden lg:block absolute top-1/2 -translate-y-1/2 -left-12 xl:-left-6 overflow-hidden" alt="">
+        <div class="element mx-auto flex flex-col items-center justify-center mt-8">
+          <i class="fa-solid text-3xl mb-4 fa-lock border-amber-400 border-4 rounded-4xl text-center p-4 w-fit"></i>
+          <h2 class = "text-3xl font-bold mb-2">Safe</h2>
+          <p class = "min-h-[3rem]">Our products are secure and private out-of-the-box</p>
+        </div>
+        <div class="element mx-auto flex flex-col items-center justify-center mt-8">
+          <i class="fa-solid text-3xl mb-4 fa-bolt border-amber-400 border-4 rounded-4xl text-center p-4 w-fit"></i>
+          <h2 class = "text-3xl font-bold mb-2">Efficient</h2>
+          <p class = "min-h-[3rem]">Our products are secure and private out-of-the-box</p>
+        </div>
+        <div class="element mx-auto flex flex-col items-center justify-center mt-8">
+          <i class="fa-solid text-3xl mb-4 fa-shield-heart border-amber-400 border-4 rounded-4xl text-center p-4 w-fit"></i>
+          <h2 class = "text-3xl font-bold mb-2">Proven</h2>
+          <p class = "min-h-[3rem]">leading the Smart Home world for 10 years</p>
+        </div>
+        <img src="assets/dots.svg" aria-hidden = "true" class = "hidden lg:block absolute top-1/2 -translate-y-1/2 -right-12 xl:-right-6 overflow-hidden" alt="">
+      </div>
+      
+
+    </section>
+      <section aria-labelledby="partners" class ="text-center grid place-items-center">
+        <div class="grid gap-4">
+          <h2 id="partners" class="text-amber-400 font-bold text-4xl">Our Partners</h2>
+          <p class="w-full max-w-lg">We are parentered with hundreds of smart home brand to help you created a smart home that fits your needs and doesn't lock in.
+          </p>
+        </div>
+        <div class="flex flex-wrap max-w-2xl mx-auto gap-8 md:gap-16 py-12 justify-center">
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner1.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner2.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner3.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner4.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner5.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner6.svg" class="w-16 h-16" alt="partner">
+          </div>
+          <div class="p-2 shadow-md rounded-md bg-white dark:shadow-2xl dark:bg-white">
+            <img src="assets/partner7.svg" class="w-16 h-16" alt="partner">
+          </div>
+        </div>
+        
+      </section>
+      <section aria-labelledby="home" class = "relative container  mx-auto flex gap-16 flex-col-reverse sm:flex-row items-center justify-center">
+        <div class = " max-w-sm sm:max-w-md lg:max-w-lg flex flex-col items-start justify-start mb-8">
+          <h2 class = "text-3xl font-bold my-8">Relax , you're home!</h2>
+          <p>All our supported hardware includes traditional inputs so you can intergate our products into your house in a way that's best for everyone.</p>
+          <a href="" class = "bg-amber-400 px-8 py-2 rounded-xl block w-fit my-8 focus:border-none focus:outline-none focus-visible:ring-4 focus-visible:ring-neutral-900 ring-neutral-900 ring-offset-4 ring-offset-amber-400 dark:ring-offset-neutral-800 dark:ring-amber-400">Sign Up</a>
+        </div>
+        <img src="assets/table.png" class = "w-60 sm:w-74 lg:w-lg" alt="table">
+        <div class = "absolute -bottom-8 -right-32 -z-10 aspect-square md:border-8 border-amber-400 rounded-full md:w-64 lg:w-96 xl:max-w-lg"></div>
+      </section>
+      <div class="-mt-5 md:-mt-10 md:h-18 xl:h-36 xl:-mt-28 left-0 right-0 w-full h-12 bg-teal-800 -bottom-8 -z-40"></div>
+      <section aria-labelledby="Contact">
+        <div class="conatiner pb-8 md:pb-0 mx-auto px-8 overflow-hidden flex text-center justify-center gap-16 flex-wrap items-center">
+          <div class="flex flex-col items-center relative">
+            <img class = "w-40" src="./assets/lamp.png" alt="">
+            <a href="" class = "shadow-xl bg-amber-400 px-16 py-2 rounded-xl mx-auto text-center block w-fit my-8 focus:border-none focus:outline-none focus-visible:ring-4 focus-visible:ring-neutral-900 ring-neutral-900 ring-offset-4 ring-offset-amber-400 dark:ring-offset-neutral-800 dark:ring-amber-400">Download the App </a>
+            <img class = "w-60 overflow-hidden mb-12 hidden md:block" src="assets/app.svg" alt="" >
+            <div class = "absolute w-90 h-90 bg-white hidden md:block border-amber-400 border-4 -z-20 rounded-full top-4/6 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          <form class="contact-border p-6 flex flex-col justify-start items-start border-6 xl:ml-50  gap-6 rounded-xl mt-8">
+            <h2 class = "font-bold text-3xl">Let's Connect!</h2>
+            <div class="relative w-full">
+              <input id = "name" type="text" placeholder="Your Name" class = "peer placeholder-transparent form-input foucs:ring-2 foucs:ring-offset-2 border-amber-400 focus:ring-amber-400 focus:outline-none w-full placeholder:font-bold dark:placeholder-amber-400 border-4 p-2 rounded-md dark:bg-amber-400 dark:text-neutral-900">
+              <label for="name" class = "peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-focus:text-blue-400 text-neutral-500 absolute  text-sm peer-focus:text-xs font-bold uppercase -top-4 left-2 -translate-y-1/2 peer-focus:-top-3 transition-all peer-focus:left-1">Your Name</label>
+            </div>
+            <div class="relative w-full">
+              <input id = "email" type="text" placeholder="Your Email" class = "peer placeholder-transparent form-input foucs:ring-2 foucs:ring-offset-2 border-amber-400 focus:ring-amber-400 focus:outline-none w-full placeholder:font-bold dark:placeholder-amber-400 border-4 p-2 rounded-md dark:bg-amber-400 dark:text-neutral-900">
+              <label for="email" class = "peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-focus:text-blue-400 text-neutral-500 absolute text-sm peer-focus:text-xs font-bold uppercase -top-4 left-2 -translate-y-1/2 peer-focus:-top-3 transition-all peer-focus:left-1">Your Email</label>
+            </div>
+            <div class = "relative">
+              <textarea name="help" id="help" cols="30" rows="8" class = " peer placeholder-transparent form-input foucs:ring-2 foucs:ring-offset-2 border-amber-400 focus:ring-amber-400 focus:outline-none w-full placeholder:font-bold dark:placeholder-amber-400 border-4 p-2 rounded-md dark:bg-amber-400 dark:text-neutral-900" placeholder="How Can We Help ?"></textarea>
+              <label for="help" class="peer-placeholder-shown:left-4 peer-placeholder-shown:top-6 peer-focus:text-blue-400 text-neutral-500 absolute text-sm peer-focus:text-xs font-bold uppercase left-2 -translate-y-1/2 peer-focus:-top-3 transition-all peer-focus:left-1">How Can We Help ?</label>
+            </div>
+            <button class="bg-black text-white rounded-md px-6 py-2 flex items-center justify-center">
+             Send
+            </button>
+            </form>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full h-auto bg-teal-900 text-white text-center shadow-xl " aria-labelledby="footer">
+      <div class="container mx-auto py-8">
+
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="text-white hover:text-teal-400" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white hover:text-teal-400" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white hover:text-teal-400" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white hover:text-teal-400" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white hover:text-teal-400" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-6">
+          <div>
+            <h3 class="font-bold text-xl pb-8">About Us</h3>
+            <ul>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Our Story</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Team</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Values</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-xl pb-8">Contact Us</h3>
+            <ul>
+              <li class = "pb-2"><a href="mailto:contact@example.com" class="hover:text-teal-400">Email</a></li>
+              <li class = "pb-2"><a href="tel:+1234567890" class="hover:text-teal-400">Phone</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Address</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-xl pb-8">Services</h3>
+            <ul>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Customer Support</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Technical Support</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Consulting</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-xl pb-8">Quick Links</h3>
+            <ul>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Privacy Policy</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">Terms & Conditions</a></li>
+              <li class = "pb-2"><a href="#" class="hover:text-teal-400">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="border-t border-teal-600 pt-4 text-center text-amber-400 text-md">
+          <p>&copy; 2025 Mahmoud Saeidy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  
+    
+  <script src="main.js"></script>
+</body>
+</html>
